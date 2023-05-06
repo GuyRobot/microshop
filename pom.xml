@@ -5,11 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>microshop</artifactId>
+    <modules>
+        <module>order-service</module>
+        <module>product-service</module>
+        <module>inventory-service</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.6</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
     <groupId>org.guysrobot</groupId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
-    <name>consoleApp</name>
+    <name>microshop</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,7 +42,7 @@
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
-                <version>1.7.20</version>
+                <version>${kotlin.version}</version>
                 <executions>
                     <execution>
                         <id>compile</id>
@@ -48,14 +59,33 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.2</version>
+                <configuration>
+                    <args>
+                        <arg>-Xjsr305=strict</arg>
+                    </args>
+                    <compilerPlugins>
+                        <plugin>spring</plugin>
+                        <plugin>jpa</plugin>
+                        <plugin>all-open</plugin>
+                    </compilerPlugins>
+                    <pluginOptions>
+                        <option>all-open:annotation=jakarta.persistence.Entity</option>
+                        <option>all-open:annotation=jakarta.persistence.Embeddable</option>
+                        <option>all-open:annotation=jakarta.persistence.MappedSuperclass</option>
+                    </pluginOptions>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-allopen</artifactId>
+                        <version>${kotlin.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-noarg</artifactId>
+                        <version>${kotlin.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
@@ -70,7 +100,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.8.2</version>
+            <version>5.9.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -79,5 +109,17 @@
             <version>1.7.20</version>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.testcontainers</groupId>
+                <artifactId>testcontainers-bom</artifactId>
+                <version>1.17.6</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
