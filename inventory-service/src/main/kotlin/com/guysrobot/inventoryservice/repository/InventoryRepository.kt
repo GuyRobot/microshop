@@ -6,4 +6,7 @@ import java.util.Optional
 
 interface InventoryRepository : CrudRepository<Inventory, Long> {
     fun findBySkuCode(skuCode: String): Optional<Inventory>
+
+    fun findInSkuCode(skuCodes: List<String>): List<Inventory>
+
 }

@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8584eb11-c6a6-4047-b6ef-388f043045c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/controller/InventoryController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/controller/InventoryController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/repository/InventoryRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/repository/InventoryRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/service/InventoryService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/service/InventoryService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/kotlin/com/guysrobot/orderservice/service/OrderService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/kotlin/com/guysrobot/orderservice/service/OrderService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,14 +45,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-18",
-    "last_opened_file_path": "D:/Web/microshop/product-service"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Web/microshop/product-service&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Web\microshop\product-service" />
+      <recent name="D:\Web\microshop\order-service" />
+      <recent name="D:\Web\microshop\inventory-service" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.guysrobot.inventoryservice.dto" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.guysrobot.orderservice.dto" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
   <component name="RunManager" selected="Kotlin.OrderServiceApplicationKt">
     <configuration name="InventoryServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.guysrobot.inventoryservice.InventoryServiceApplicationKt" />
