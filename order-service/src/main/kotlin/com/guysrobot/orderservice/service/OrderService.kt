@@ -13,7 +13,7 @@ import java.util.UUID
 @Service
 class OrderService(
     private val orderRepository: OrderRepository,
-    private val webClient: WebClient
+    private val webClientBuilder: WebClient.Builder
 ) {
     @Transactional
     fun create(orderRequest: OrderRequest) {
@@ -24,8 +24,8 @@ class OrderService(
 
         val skuCodes = order.orderLineItems.map { it.skuCode }
 
-        val result = webClient.get()
-            .uri("http://localhost:9090/api/inventories") {
+        val result = webClientBuilder.build().get()
+            .uri("http://inventory-service/api/inventories") {
                 return@uri it.queryParam("skuCode", skuCodes).build()
             }
             .retrieve()
