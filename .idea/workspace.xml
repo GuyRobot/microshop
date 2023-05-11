@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8584eb11-c6a6-4047-b6ef-388f043045c2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discover-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discover-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +42,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Web/microshop/api-gateway/src/main/resources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-18",
+    "last_opened_file_path": "D:/Web/microshop/discover-server/src/main/resources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Web\microshop\api-gateway\src\main\resources" />
       <recent name="D:\Web\microshop\discover-server\src\main\resources" />
+      <recent name="D:\Web\microshop\api-gateway\src\main\resources" />
       <recent name="D:\Web\microshop\discover-server\src\main\kotlin" />
       <recent name="D:\Web\microshop\product-service" />
       <recent name="D:\Web\microshop\order-service" />
