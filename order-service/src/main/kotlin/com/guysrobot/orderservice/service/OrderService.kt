@@ -2,8 +2,10 @@ package com.guysrobot.orderservice.service
 
 import com.guysrobot.orderservice.dto.InventoryResponse
 import com.guysrobot.orderservice.dto.OrderRequest
+import com.guysrobot.orderservice.event.OrderPlacedEvent
 import com.guysrobot.orderservice.model.Order
 import com.guysrobot.orderservice.repository.OrderRepository
+import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.reactive.function.client.WebClient
@@ -13,7 +15,8 @@ import java.util.UUID
 @Service
 class OrderService(
     private val orderRepository: OrderRepository,
-    private val webClientBuilder: WebClient.Builder
+    private val webClientBuilder: WebClient.Builder,
+    private val kafkaTemplate: KafkaTemplate<String, OrderPlacedEvent>
 ) {
     @Transactional
     fun create(orderRequest: OrderRequest) {
@@ -36,6 +39,7 @@ class OrderService(
             && result.all { it.isInStock }
         ) {
             orderRepository.save(order)
+            kafkaTemplate.send("notificationTopic", OrderPlacedEvent(order.orderNumber))
         } else {
             throw IllegalArgumentException("Product is not in stock")
         }
