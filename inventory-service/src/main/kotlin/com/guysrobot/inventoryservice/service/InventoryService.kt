@@ -16,7 +16,8 @@ class InventoryService(
     }
 
     fun checkInStock(skuCodes: List<String>): List<InventoryResponse> {
-        return inventoryRepository.findInSkuCode(skuCodes).map { InventoryResponse(it.skuCode, it.quantity > 0) }
+        return inventoryRepository.findBySkuCodeIn(skuCodes)
+            .map { InventoryResponse(it.skuCode, it.quantity > 0) }
     }
 
 }

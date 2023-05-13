@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8584eb11-c6a6-4047-b6ef-388f043045c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/kotlin/com/guysrobot/apigateway/config/SecurityConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/kotlin/com/guysrobot/apigateway/config/SecurityConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/src/main/kotlin/com/guysrobot/discoveryserver/config/SecurityConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/kotlin/com/guysrobot/discoveryserver/config/SecurityConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discover-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discover-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/repository/InventoryRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/repository/InventoryRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/service/InventoryService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/kotlin/com/guysrobot/inventoryservice/service/InventoryService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/kotlin/com/guysrobot/orderservice/service/OrderService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/kotlin/com/guysrobot/orderservice/service/OrderService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +60,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "corretto-18",
-    "last_opened_file_path": "D:/Web/microshop/notification-service/src/main/resources"
+    "last_opened_file_path": "D:/Web/microshop/api-gateway/src/main/resources"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Web\microshop\api-gateway\src\main\resources" />
       <recent name="D:\Web\microshop\notification-service\src\main\resources" />
       <recent name="D:\Web\microshop\discover-server\src\main\resources" />
-      <recent name="D:\Web\microshop\api-gateway\src\main\resources" />
       <recent name="D:\Web\microshop\discover-server\src\main\kotlin" />
       <recent name="D:\Web\microshop\product-service" />
     </key>
@@ -75,17 +84,31 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.DiscoveryServerApplicationKt (1)">
-    <configuration name="DiscoveryServerApplicationKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guysrobot.discoveryserver.DiscoveryServerApplicationKt" />
-      <module name="discover-server" />
+  <component name="RunManager" selected="Kotlin.NotificationServiceApplicationKt">
+    <configuration name="ApiGatewayApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guysrobot.apigateway.ApiGatewayApplicationKt" />
+      <module name="api-gateway" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryServerApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.guysrobot.inventoryservice.DiscoveryServerApplicationKt" />
+    <configuration name="InventoryServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guysrobot.inventoryservice.InventoryServiceApplicationKt" />
       <module name="inventory-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroProductApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guysrobot.micro_product.MicroProductApplicationKt" />
+      <module name="product-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.guysrobot.notificationservice.NotificationServiceApplicationKt" />
+      <module name="notification-service" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,11 +120,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Kotlin.ApiGatewayApplicationKt" />
+      <item itemvalue="Kotlin.InventoryServiceApplicationKt" />
+      <item itemvalue="Kotlin.NotificationServiceApplicationKt" />
+      <item itemvalue="Kotlin.MicroProductApplicationKt" />
+      <item itemvalue="Kotlin.OrderServiceApplicationKt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.DiscoveryServerApplicationKt (1)" />
+        <item itemvalue="Kotlin.NotificationServiceApplicationKt" />
         <item itemvalue="Kotlin.OrderServiceApplicationKt" />
-        <item itemvalue="Kotlin.DiscoveryServerApplicationKt" />
+        <item itemvalue="Kotlin.MicroProductApplicationKt" />
+        <item itemvalue="Kotlin.InventoryServiceApplicationKt" />
+        <item itemvalue="Kotlin.ApiGatewayApplicationKt" />
       </list>
     </recent_temporary>
   </component>

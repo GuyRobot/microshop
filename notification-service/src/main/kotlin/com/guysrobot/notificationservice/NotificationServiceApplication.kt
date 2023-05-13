@@ -7,7 +7,7 @@ import org.springframework.kafka.annotation.KafkaListener
 @SpringBootApplication
 class NotificationServiceApplication {
 
-    @KafkaListener(id = "notificationTopic")
+    @KafkaListener(topics = ["notificationTopic"])
     fun listen(orderPlacedEvent: OrderPlacedEvent) {
 
     }
